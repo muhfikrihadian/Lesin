@@ -1,0 +1,197 @@
+@import "general.css";
+
+html, body {
+  height: 100% !important;
+}
+body {
+  font-family: 'Karla', sans-serif !important;
+  background-color: #f2f2f2;
+  position: relative;
+}
+.show_password {
+  color: #201F1F;
+}
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0D91A6;
+  height: 60px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 5px rgba(0,0,0,.35);
+}
+nav a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+main {
+  margin-bottom: 30px;
+  background-color: #FFF;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.2);
+  width: 80%;
+  border-radius: 5px;
+  padding: 3rem 2rem;
+}
+main > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #343434;
+}
+main .box_row {
+  display: flex;
+  justify-content: space-between;
+}
+form .box_row .input_box + .input_box {
+  margin-left: 10px;
+}
+main .input_box {
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+main .input_box label {
+  margin-bottom: 10px;
+  color: #464444;
+  display: block;
+  height: 30px;
+}
+main .input_box input {
+  border-radius: 5px;
+  padding: 10px 1rem;
+  height: 40px;
+}
+main .input_box input, main .input_box select {
+  transition: all 250ms;
+  box-shadow: none !important;
+}
+main .input_box > .visiblePassword {
+  position: absolute;
+  color: #606060;
+  font-size: 18px !important;
+  right: 11px;
+  top: calc(30px + 1px + 20px);
+  cursor: pointer;
+}
+main .input_box > .visiblePassword:hover {
+  color: #424242;
+}
+main .input_box .help-block {
+  color: #DF3B17;
+  margin-top: 10px;
+}
+main .input_box select {
+  padding: 10px 1rem;
+  background-color: #fff;
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+}
+main .input_box select option {
+  padding: 1rem;
+  display: block;
+  line-height: 70px;
+}
+main select, main .input_box input {
+  border: 1px solid #D5D5D5;
+}
+main select, main .input_box input:focus {
+  border: 1px solid #9F9B9B;
+}
+main form button {
+  padding: 16px 0;
+  width: 100%;
+  color: white;
+  transition: all 250ms;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 4px !important;
+}
+main form button:focus {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0,0,0,.46) !important;
+}
+
+#login_page {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#login_page form button {
+  font-weight: bold;
+  background-color: #74bc60;
+  border: 1px solid #74bc60;
+}
+#login_page form button:hover {
+  background-color: #5CA448;
+}
+#login_page form button:active {
+  background-color: #51993D;
+}
+#login_page #forgot_password {
+  color: #D79026;
+  float: left;
+  transition: all 300ms;
+}
+#login_page #forgot_password:hover {
+  color: #AC6E13;
+  text-decoration: underline;
+}
+#login_page #register {
+  color: #535353;
+  float: right;
+}
+#login_page #register a {
+  color: #1CB442;
+  transition: all 300ms;
+  text-transform: capitalize;
+}
+#login_page #register a:hover {
+  color: #129933;
+  text-decoration: underline;
+}
+
+#register_page {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#register_page form + small {
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #545454;
+  font-size: 1em;
+}
+#register_page #login {
+  transition: all 250ms;
+  width: 100%;
+  color: #1CA0C3;
+}
+#register_page #login:hover {
+  color: #118EAF;
+  text-decoration: underline;
+}
+#register_page button {
+  border: 1px solid #15AC4C;
+  transition: all 250ms;
+  background-color: #1DC159;
+}
+#register_page button:hover {
+  background-color: #15AC4C;
+}
+
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 60%;
+  }
+}

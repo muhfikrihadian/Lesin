@@ -1,0 +1,53 @@
+@import "general.css";
+
+#hasil_cari article figcaption span {
+  margin-top: 10px;
+  display: block;
+}
+#hasil_cari article figcaption em {
+  font-style: normal;
+}
+#hasil_cari article figcaption .materi_pelajaran {
+  margin-left: calc(1rem + 50px);
+}
+#task_page .card-task article {
+  transition: all 250ms;
+}
+#task_page .card-task:hover article {
+  box-shadow: 0 4px 8px rgba(0,0,0,.15)!important;
+}
+#task_page .card-task article .detail_pesanan > h2 {
+  position: relative;
+}
+#task_page .card-task article .detail_pesanan > h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  transition: all 250ms;
+  left: calc(80px + 1rem);
+  background-color: #24B1C9;
+}
+#task_page .card-task:hover article .detail_pesanan > h2::after {
+  width: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  #hasil_cari article figcaption span {
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  main #task_page article img {
+    margin-left: 0;
+    margin-right: 15px;
+    float: left;
+  }
+  main #task_page article .detail_pesanan span {
+    position: absolute;
+    right: 1rem;
+    top: 10px;
+  }
+}

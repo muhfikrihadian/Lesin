@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  outline-style: none;
+}
+header {
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100%;
+  height: calc(100vh - 70px);
+}
+header .overlay {
+  height: 100%;
+  background-color: rgba(21,101,193,.61);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+header .container {
+  padding: 2rem 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+header .container img {
+  display: none;
+}
+
+header .header-caption h1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: 0px !important;
+  font-size: 1.5rem;
+}
+header .header-caption h1 strong {
+  font-weight: 700;
+}
+header .header-caption h1 {
+  color: #464545;
+}
+header .header-caption p {
+  color: #585858;
+  margin-bottom: 0 !important;
+}
+header .header-caption-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+header .header-caption-action a {
+  height: 55px;
+  align-items: center;
+  padding: 0 1rem !important;
+  border-radius: 5px;
+  transition: all 250ms;
+  text-decoration: none !important;
+}
+header #go_to_content {
+  position: absolute;
+  bottom: -21px;
+  z-index: 9999;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #E8982D;
+  color: white;
+  padding: 0 !important;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+}
+header #go_to_content:hover {
+  background-color: #DB8C23;
+}
+header #go_to_content:focus {
+  box-shadow: 0 1px 0px rgba(0,0,0,.2);
+  transform: translateX(-50%) translateY(2px);
+}
+
+main {
+  padding-top: 30px;
+}
+main .form_cari_guru {
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.25);
+  flex-direction: column;
+}
+main .form_cari_guru select:first-of-type {
+  /* border-radius: 4px 0 0 4px; */
+}
+main .form_cari_guru select:not(:first-of-type):not(:last-of-type) {
+  border-radius: 0;
+}
+main .form_cari_guru select:last-of-type {
+  border-radius: 0px 4px 4px 0px;
+}
+main .form_cari_guru button[type='submit'] {
+  background-color: #139A4D;
+  color: white;
+  border: 1px solid #0E8A43;
+  height: 40px;
+  padding: 0 1rem !important;
+  border-radius: 5px;
+}
+main .container > section {
+  padding: 2rem 0;
+}
+main section h2 {
+  font-size: 27px;
+  position: relative;
+  margin-bottom: 20px;
+}
+main section p {
+  font-size: 18px;
+}
+main #keunggulan figure figcaption h3 {
+  height: 65px;
+}
+main #tutorin {
+  background-position: left;
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #5C5C5C;
+  /* text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
+}
+main #tutorin h1 {
+  color: #EC9A2E;
+  font-weight: bolder;
+}
+main #tutorin p {
+  font-weight: bold;
+}
+main #pendapat figure {
+  flex-direction: column;
+}
+main #pendapat .card {
+  box-shadow: 0 0 5px 1px rgba(0,0,0, .19);
+}
+main #pendapat blockquote footer {
+  height: auto !important;
+}
+main #hasil_cari {
+  padding-bottom: calc(1rem + 70px);
+}
+main #hasil_cari #filter_guru_mobile {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 70px;
+  box-shadow: -5px 0 6px 4px rgba(0,0,0,.20) !important;
+  overflow: hidden;
+}
+main #hasil_cari #filter_guru_mobile .btn_filter_guru {
+  height: 70px;
+  position: relative;
+}
+main #hasil_cari #filter_guru_mobile form {
+  height: 0;
+}
+main #hasil_cari #filter_guru_mobile .btn_filter_guru > a {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+}
+main #hasil_cari #filter_guru_mobile #show_filter {
+  height: 50px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid #D58112;
+  color: #C97B13;
+  display: block;
+  line-height: 50px;
+  width: 90%;
+}
+main #hasil_cari #filter_guru_mobile + section article {
+  overflow: hidden;
+}
+main #hasil_cari #filter_guru_mobile + section article .row > div:first-child {
+  border-bottom: 1px solid #dee2e6!important;
+}
+main #hasil_cari #filter_guru_mobile + section article figure {
+  height: 100%;
+  overflow: hidden;
+}
+main #hasil_cari #filter_guru_mobile + section article figcaption {
+  font-size: 12px;
+}
+main #order_page > .row > div:nth-child(1) {
+  background-color: #f8f9fa;
+}
+
+@media screen and (min-width: 576px) {
+
+  header .header-caption {
+    top: 0px;
+    transform: translateY(0px);
+  }
+  main .form_cari_guru {
+    flex-direction: row;
+  }
+  main .form_cari_guru select {
+    margin-bottom: 0;
+  }
+  main section h2 {
+    font-size: 2.2rem;
+    margin-bottom: calc(2rem + 30px);
+  }
+  main section h2:first-child::after {
+    position: absolute;
+    bottom: -30px;
+    height: 2px;
+    width: 100%;
+    max-width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0D91A6;
+    content: '';
+  }
+
+  main #pendapat figure {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    height: calc(100vh - 70px - 34px - 37px - 1.2rem - 30px);
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+  }
+  header .container {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  header .container img {
+    display: inline-block;
+    height: 200px;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  header .header-caption {
+    width: 49%;
+    left: 0;
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+  }
+  header .header-caption-action {
+    justify-content: flex-start;
+  }
+  header .header-caption-action a {
+    margin-right: 40px;
+  }
+  header .header-caption h1 {
+    font-size: 2rem;
+  }
+  main #keunggulan figure figcaption {
+    font-size: 18px;
+  }
+  main #hasil_cari #filter_guru {
+    position: static;
+    height: auto;
+    max-height: 100vh;
+  }
+  main #hasil_cari #filter_guru + section article .row > div:first-child {
+    border-bottom: 0px solid #dee2e6!important;
+  }
+  main #hasil_cari article > div > div:last-child {
+    border-left: 1px solid #DADADA;
+  }
+  main #order_page > .row > div:nth-child(1) {
+    border-left: 1px solid #D6D6D6;
+  }
+}
