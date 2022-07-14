@@ -1,0 +1,90 @@
+@import "general.css";
+
+main #search_materi {
+  min-height: calc(100vh - 242px - 70px);
+}
+main #search_materi form button {
+  background-color: #28C45E;
+  position: absolute;
+  color: white;
+  right: 0;
+  font-size: 20px;
+  top: 0;
+  border: 1px solid #22B555;
+  padding: 0 .75rem !important;
+  height: 100%;
+  transition: all 250ms;
+  border-radius: 0 0.25rem 0.25rem 0 !important;
+}
+main #search_materi form button:hover {
+  background-color: #15A446;
+  border: 1px solid #149540;
+}
+main #search_materi .card figcaption h5 {
+  color: #292929;
+  text-transform: capitalize;
+}
+main #search_materi .card figcaption p {
+  color: #676767;
+}
+main #search_materi .card var {
+  right: 1rem;
+  top: 1rem;
+  color: #E6602F;
+  font-weight: bold;
+}
+main #cari_guru form button {
+  padding: 7px 1rem;
+}
+main #task_page article img {
+  margin-left: auto;
+  margin-right: auto;
+}
+main #task_page .card-task {
+  display: block;
+}
+main #task_page .card-task article {
+  transition: all 250ms;
+}
+#task_page .card-task article .detail_pesanan > h2 {
+  position: relative;
+}
+main #task_page .card-task article .detail_pesanan > h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  transition: all 250ms;
+  left: calc(80px + 1rem);
+  background-color: #24B1C9;
+}
+main #task_page .card-task:hover article .detail_pesanan > h2::after {
+  width: 180px;
+}
+main #task_page .card-task:hover article {
+  box-shadow: 0 4px 8px rgba(0,0,0,.15)!important;
+}
+main #order_page figure address {
+  color: #1CAFC3;
+}
+main #order_page .row .col address, main #order_page #deskripsi_pesanan p {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  min-height: 150px;
+  padding: .375rem .75rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  main #task_page article img {
+    margin-left: 0;
+    float: left;
+  }
+  main #task_page article .detail_pesanan span {
+    position: absolute;
+    right: 1rem;
+    top: 10px;
+  }
+}
